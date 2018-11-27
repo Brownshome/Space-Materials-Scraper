@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 
 public class Material {
-	private final static Pattern tableElementSearch = Pattern.compile("<tr><td width='18%'><b>([^<>]*)</b></td><td>([^<]*)</td></tr>");
+	private final static Pattern tableElementSearch = Pattern.compile("<tr><td[^>]*><b>([^<>]*)</b></td><td>([^<]*)</td></tr>");
 	
 	private final String name;
 	private Map<String, String> data = null;

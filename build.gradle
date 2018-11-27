@@ -3,6 +3,10 @@ plugins {
 	id 'application'
 }
 
-application {
-	mainClassName = 'brownshome.apss.scraper.Main'
+mainClassName = 'brownshome.apss.scraper.Main'
+
+jar {
+	manifest {
+		attributes 'Main-Class': "$mainClassName"
+	}
 }
